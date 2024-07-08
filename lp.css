@@ -1,0 +1,90 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+header p {
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background: #FFC107;
+    color: black;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+}
+
+section#contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75em;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        padding: 1em;
+    }
+
+    .cta-button {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+    }
+}
